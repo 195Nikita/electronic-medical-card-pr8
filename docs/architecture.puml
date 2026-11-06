@@ -1,0 +1,21 @@
+@startuml
+title Электронная медицинская карта - контейнерная схема
+actor "Врач" as Doctor
+rectangle "Веб-интерфейс" as Web
+rectangle "API-шлюз" as Gateway
+rectangle "Сервис медицинских записей" as Records
+rectangle "Сервис пациентов" as Patients
+rectangle "Сервис интеграции" as Integration
+database "База данных" as DB
+database "Защищённое хранилище документов" as Storage
+rectangle "Лаборатория" as Lab
+Doctor --> Web
+Web --> Gateway : HTTPS
+Gateway --> Records
+Gateway --> Patients
+Records --> DB
+Patients --> DB
+Records --> Storage
+Lab --> Integration : FHIR R4 / HTTPS
+Integration --> Records : проверенные результаты
+@enduml
