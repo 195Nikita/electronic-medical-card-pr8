@@ -8,7 +8,8 @@
 
 Основная ветка: `main`. Рабочая ветка: `feature/lab-results-import`.
 Рабочая ветка содержит архитектурную схему, API-контракт, тесты политики доступа, карточку задачи и ADR-001 в этом README.
-Создан локальный Git-репозиторий. Удалённый репозиторий, Pull Request и серверная защита main пока не настроены.
+Репозиторий опубликован на GitHub: https://github.com/195Nikita/electronic-medical-card-pr8/tree/feature/lab-results-import
+Обе ветки загружены. Pull Request и серверная защита main пока не настроены.
 
 ## Артефакты
 
